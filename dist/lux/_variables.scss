@@ -37,9 +37,23 @@ $danger:        $red !default;
 $light:         $white !default;
 $dark:          $gray-800 !default;
 
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem !default;
+
 // Body
 
 $body-color:                $gray-600 !default;
+
+// Modals
+$modal-lg:                    900px !default;
+$modal-md:                    600px !default;
+$modal-sm:                    300px !default;
 
 // Components
 
@@ -51,7 +65,7 @@ $border-radius-sm:            0 !default;
 
 $font-family-sans-serif:      "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
-$font-size-base:              0.875rem !default;
+$font-size-base:              0.8125rem !default;
 
 $h1-font-size:                2rem !default;
 $h2-font-size:                1.75rem !default;
@@ -63,20 +77,15 @@ $h6-font-size:                0.75rem !default;
 $headings-font-weight:        600 !default;
 $headings-color:              $gray-900 !default;
 
+$line-height-base:            1.15 !default;
+
 // Tables
 
 $table-border-color:          rgba(0, 0, 0, 0.05) !default;
 
 // Buttons
 
-$input-btn-padding-y:         0.75rem !default;
-$input-btn-padding-x:         2rem !default;
-
-$input-btn-padding-y-sm:      .5rem !default;
-$input-btn-padding-x-sm:      1rem !default;
-
-$input-btn-padding-y-lg:      2rem !default;
-$input-btn-padding-x-lg:      3rem !default;
+$input-btn-focus-width:       .1rem !default;
 
 $btn-font-weight:             600 !default;
 
@@ -89,7 +98,7 @@ $input-group-addon-bg:                  $gray-300 !default;
 
 // Navbar
 
-$navbar-padding-y:                  1.5rem !default;
+$navbar-padding-y:                  ($spacer / 4) !default;
 
 $navbar-dark-hover-color:           $white !default;
 
